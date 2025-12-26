@@ -19,6 +19,5 @@ timer.style.height = "100vh"
 timer.style.justifyContent = "center";
 timer.style.alignItems = "center";
 
-//how to continuously change the time ? 
 
 
