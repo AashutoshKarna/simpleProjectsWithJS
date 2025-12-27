@@ -20,15 +20,15 @@ const quotes = [
     "Your time is limited, so don’t waste it living someone else’s life. — Steve Jobs",
     "Everything you’ve ever wanted is on the other side of fear. — George Addair"
   ];
-function generateQuote (){
-    const text = document.getElementById("quote");
-  //math.rrandom give random value between 0 to 1 now if i multiply with quotes.length so it will go from 0 to 19 because there are 20 quotes
-    const index =Math.floor(Math.random()*quotes.length);
-//   text.textContent = quotes[1];
-    text.textContent = quotes[index];
-}
+// function generateQuote (){
+//     const text = document.getElementById("quote");
+//   //math.rrandom give random value between 0 to 1 now if i multiply with quotes.length so it will go from 0 to 19 because there are 20 quotes
+//     const index =Math.floor(Math.random()*quotes.length);
+// //   text.textContent = quotes[1];
+//     text.textContent = quotes[index];
+// }
 
-setInterval(generateQuote,2000);
+// setInterval(generateQuote,2000);
 
 function bodycolor(){
 const parbody = document.querySelector("body");
@@ -47,3 +47,14 @@ const b = Math.floor(Math.random() *256);
 quotecontainer.style.backgroundColor = `rgba(${r}, ${g}, ${b}, 0.2)`;
 }
 setInterval(quotecontainercolor,2000);
+
+const btn  = document.querySelector('button');
+btn.addEventListener('click',(event)=>{
+    // console.log(event);
+    // console.log(event.type);
+    // console.log(event.target);
+    // if(event.target==="Enter"){}
+    const text = document.getElementById("quote");
+    const index =Math.floor(Math.random()*quotes.length);
+    text.textContent = quotes[index];
+})

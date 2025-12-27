@@ -30,3 +30,10 @@ h1{
     background: #f9f9f9;
     border-radius: 2%;
 }
+
+button{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
