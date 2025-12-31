@@ -9,6 +9,7 @@ let winner = [
 
 let board_array = new Array(9).fill("E");
 
+
 function checkWinner(){
    
     for(let [index0,index1,index2] of winner)
